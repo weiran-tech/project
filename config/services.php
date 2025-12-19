@@ -37,10 +37,5 @@ return [
         'api_key'      => '',
         'from_address' => '',
         'from_name'    => '',
-    ],
-    'qq'        => [
-        'client_id'     => env('QQ_KEY'),
-        'client_secret' => env('QQ_SECRET'),
-        'redirect'      => env('URL_SITE') . '/' . env('QQ_REDIRECT_URI'),
-    ],
+    ]
 ];

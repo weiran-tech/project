@@ -30,7 +30,6 @@
         "doctrine/dbal": "^3.0",
         "itsgoingd/clockwork": "^5.1",
         "phpunit/phpunit": "^10.0",
-        "barryvdh/laravel-ide-helper": "^3.0",
         "poppy/faker": "10.0.x-dev",
         "zircote/swagger-php": "^5.0"
     },
@@ -67,13 +66,8 @@
             "@php artisan vendor:publish --force --tag=weiran-assets",
             "@php artisan core:permission init"
         ],
-        "post-install-cmd": [
-            "@php artisan ide-helper:generate"
-        ],
-        "post-update-cmd": [
-            "@php artisan ide-helper:generate",
-            "@php artisan ide-helper:meta"
-        ],
+        "post-install-cmd": [],
+        "post-update-cmd": [],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],

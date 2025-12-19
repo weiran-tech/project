@@ -57,7 +57,7 @@ Transfer/sec:      2.44MB
 
 ```
 # Install
-$ composer create-project weiran/project weiran_v1 '^1.0.x-dev'
+$ composer create-project weiran/project weiran_v1 '^1.0'
 
 # Start service server
 $ cd weiran_v1
